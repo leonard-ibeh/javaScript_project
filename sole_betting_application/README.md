@@ -2,7 +2,7 @@
 This is a JavaScript-based betting application where players aim to match the same figure in a row to win. The game consists of 3 rows, and the objective is to achieve matching symbols across any row. The application incorporates prompt from modules, global variables, a deposit function, functions to determine the number of lines to play, a function to enter the amount to bet per line, spin the bet machine, transpose columns to rows, print out rows in a nice format, calculate winnings, and a game function to continue playing until the balance runs out or the user chooses to stop.
 ## Table of Contents
 ```Installation
-* Usage
+- Usage
 * Features
 * Technologies
 * Contributing
