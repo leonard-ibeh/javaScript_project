@@ -5,7 +5,7 @@ This is a JavaScript-based betting application where players aim to match the sa
 
 ## Installation
 
-- **Usage
+- **Usage**
 - **Features**
 - **Technologies**
 - **Contributing**
@@ -56,7 +56,8 @@ The game function handles the flow of the game, allowing users to continue playi
 Feel free to enjoy the game and test your luck!
 
 ## Technologies
-The 3 by 3 Slot Betting Application is built using the following technologies:
+
+> The 3 by 3 Slot Betting Application is built using the following technologies:
 
 - **JavaScript**
 - **HTML**
