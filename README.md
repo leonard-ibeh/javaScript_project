@@ -2,7 +2,9 @@
 
 ## Description
 
-```This repository contains various projects on JavaScript. Each project explores different aspects and features of JavaScript, showcasing its versatility and power as a programming language. The projects cover a wide range of topics, including but not limited to:```
+```This repository contains various projects on JavaScript. Each project explores different aspects and features of JavaScript,
+showcasing its versatility and power as a programming language.
+The projects cover a wide range of topics, including but not limited to:```
 
 - **Basic JavaScript concepts and syntax**
 - **DOM manipulation and event handling**
@@ -32,6 +34,7 @@ Feel free to explore the projects and dive into the world of JavaScript. Whether
 If you have any questions, suggestions, or feedback, please don't hesitate to reach out to the repository maintainer:
 
 **Name: Ibeh leonard**
+
 **Email: [obinnaibeh42@gmail.com](https://mail.google.com)**
 
 
