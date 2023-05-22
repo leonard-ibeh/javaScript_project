@@ -130,7 +130,7 @@ const getWinnings = (rows, bet, lines) => {
     }
     return winnings;
 };
-const game = () => {
+const game1 = () => {
     let balance = deposit();
     while (true) {
         console.log("You have a balance of $" + balance);
@@ -155,4 +155,4 @@ const game = () => {
 
     }
 
-game();
+game1();
