@@ -16,7 +16,7 @@ const openModel = function () {
   overlay.classList.remove("hidden");
 };
 
-for (let i = 0; i < btnOpenModal.length; i++)
+for (let i = 0; i < btnOpenModel.length; i++)
   btnOpenModel[i].addEventListener("click", openModel);
 
 const closeModel = function () {
