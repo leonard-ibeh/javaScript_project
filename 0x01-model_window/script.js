@@ -6,23 +6,23 @@
 // 4. When the "Cancel" button is clicked, hide the hidden model.
 // 5. Allow the hidden model to be canceled by clicking outside the model as well.
 
-const modal = document.querySelector(".modal");
+const model = document.querySelector(".model");
 const overlay = document.querySelector(".overlay");
-const btnCloseModel = document.querySelector(".close-modal");
-const btnOpenModal = document.querySelectorAll(".show-modal");
+const btnCloseModel = document.querySelector(".close-model");
+const btnOpenModel = document.querySelectorAll(".show-model");
 
 const openModel = function () {
-  modal.classList.remove("hidden");
+  model.classList.remove("hidden");
   overlay.classList.remove("hidden");
 };
 
 for (let i = 0; i < btnOpenModal.length; i++)
-  btnOpenModal[i].addEventListener("click", openModel);
+  btnOpenModel[i].addEventListener("click", openModel);
 
-const closeModal = function () {
-  modal.classList.add("hidden");
+const closeModel = function () {
+  model.classList.add("hidden");
   overlay.classList.add("hidden");
 };
 
-btnCloseModel.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+btnCloseModel.addEventListener("click", closeModel);
+overlay.addEventListener("click", closeModel);

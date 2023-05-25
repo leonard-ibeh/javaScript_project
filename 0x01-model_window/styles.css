@@ -21,7 +21,7 @@ body {
   background: linear-gradient(to top left, #28b487, #7dd56f);
 }
 
-.show-modal {
+.show-model {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
@@ -33,7 +33,7 @@ body {
   cursor: pointer;
 }
 
-.close-modal {
+.close-model {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
@@ -59,7 +59,7 @@ p {
   display: none;
 }
 
-.modal {
+.model {
   position: absolute;
   top: 50%;
   left: 50%;
