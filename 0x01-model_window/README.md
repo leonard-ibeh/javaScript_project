@@ -12,15 +12,15 @@
 > To use the Interactive Web Model, simply download the provided HTML and JavaScript files. You can then open the HTML file in any modern web browser to access the functionality.
 
 ## Customization
-If you wish to modify the web model, you can edit the HTML and JavaScript files to suit your requirements. Feel free to customize the appearance, button labels, and any additional functionality as needed.
+> If you wish to modify the web model, you can edit the HTML and JavaScript files to suit your requirements. Feel free to customize the appearance, button labels, and any additional functionality as needed.
 
 ## Contributing
-If you would like to contribute to the Interactive Web Model, you are welcome to fork the repository and submit a pull request. Your contributions are highly appreciated!
+> If you would like to contribute to the Interactive Web Model, you are welcome to fork the repository and submit a pull request. Your contributions are highly appreciated!
 
 ## License
-This web model is licensed under the Ibeh leonard. You are free to use, modify, and distribute the model as per the terms of the license.
+> This web model is licensed under the Ibeh leonard. You are free to use, modify, and distribute the model as per the terms of the license.
 
 ## Acknowledgements
-We would like to acknowledge Jonas .
+> We would like to acknowledge Jonas .
 
-Enjoy using the Interactive Web Model! If you have any questions or suggestions, please feel free to reach out.
+> Enjoy using the Interactive Web Model! If you have any questions or suggestions, please feel free to reach out.
