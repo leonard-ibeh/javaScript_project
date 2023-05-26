@@ -22,3 +22,18 @@ Click the "Save" button to save the updated task.
 4. Mark Task as Completed:
 > Identify the task you have completed in the list.
 Click the checkbox or "Mark as Completed" button to indicate its completion.
+
+## Contributing
+> Contributions are welcome! If you'd like to contribute to the To-Do List App, please follow these steps:
+
+- **Fork the repository.**
+- **Create a new branch for your feature/bug fix.**
+- **Make your changes and commit them.**
+- **Push your changes to your forked repository.**
+- **Submit a pull request with a detailed description of your changes.**
+
+
+## Contact
+> If you have any questions, suggestions, or feedback, please feel free to contact us at your-email@example.com.
+
+Happy task management!
