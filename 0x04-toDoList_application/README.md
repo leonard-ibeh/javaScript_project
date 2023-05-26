@@ -2,7 +2,6 @@
 > The To-Do List App is a simple and user-friendly application that allows you to manage your tasks efficiently. With this app, you can easily add, delete, edit, and mark tasks as completed, helping you stay organized and productive.
 
 ## Features
-
 - **Add Task:** Quickly add new tasks to your to-do list using an intuitive input form.
 - **Delete Task:**  Remove unwanted tasks from your list with a simple deletion feature.
 - **Edit Task:**  Modify task details easily, such as changing the task description or due date.
