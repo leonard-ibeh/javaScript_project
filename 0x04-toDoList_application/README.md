@@ -9,16 +9,16 @@
 
 ## Usage
 1. Add Task:
- > Enter the task details in the provided input form.
+> Enter the task details in the provided input form.
 Click the "Add" button to add the task to your to-do list.
-1. Delete Task:
+2. Delete Task:
  > Locate the task you want to delete in the list.
 Click the "Delete" button next to the task to remove it from your list.
-1. Edit Task:
+3. Edit Task:
 > Find the task you wish to edit in the list.
 Click the "Edit" button next to the task to modify its details.
 Make the necessary changes in the editable form.
 Click the "Save" button to save the updated task.
-1. Mark Task as Completed:
+4. Mark Task as Completed:
 > Identify the task you have completed in the list.
 Click the checkbox or "Mark as Completed" button to indicate its completion.
