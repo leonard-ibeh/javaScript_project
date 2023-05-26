@@ -34,6 +34,6 @@ Click the checkbox or "Mark as Completed" button to indicate its completion.
 
 
 ## Contact
-> If you have any questions, suggestions, or feedback, please feel free to contact us at your-email@example.com.
+> If you have any questions, suggestions, or feedback, please feel free to contact me at obinnaibeh42@gmail.com.
 
 Happy task management!
