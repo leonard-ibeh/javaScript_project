@@ -9,9 +9,9 @@ const entertainmentBtn = document.getElementById("entertainment");
 const technologyBtn = document.getElementById("technology");
 const searchBtn = document.getElementById("searchBtn");
 
+const newsDetails = document.getElementById("newsdetails");
 const newsQuery = document.getElementById("newsQuery");
 const newsType = document.getElementById("newsType");
-const newsdetails = document.getElementById("newdetails");
 
 //  Array
 
@@ -21,19 +21,21 @@ let newsDataArr = [];
 
 const API_KEY = "895eaaeebaec42ca88ded5d2856a5c9a";
 const HEADLINES_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=ng&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
+  "https://newsapi.org/v2/top-headlines?country=in&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
 const GENERAL_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=ng&category=general&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
+  "https://newsapi.org/v2/top-headlines?country=in&category=general&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
 const BUSINESS_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=ng&category=business&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
+  "https://newsapi.org/v2/top-headlines?country=in&category=business&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
 const SPORT_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=ng&category=sport&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
+  "https://newsapi.org/v2/top-headlines?country=in&category=sport&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
 const ENTERTAINMENT_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=ng&category=entertainment&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
+  "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
 const TECHNOLOGY_NEWS =
-  "https://newsapi.org/v2/top-headlines?country=ng&category=technology&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
+  "https://newsapi.org/v2/top-headlines?country=in&category=technology&apikey=895eaaeebaec42ca88ded5d2856a5c9a";
 const SEARCH_NEWS =
   "https://newsapi.org/v2/everything?q=keyword&apiKey=895eaaeebaec42ca88ded5d2856a5c9a";
+
+// window.onload(function)
 
 generalBtn.addEventListener("click", function () {
   fetchGeneralNews();
@@ -65,12 +67,14 @@ const fetchGeneralNews = async () => {
     // handle errors
     console.log(responce.status, responce.statusText);
   }
+  displayNews();
 };
 const fetchBusinessNews = async () => {
   const responce = await fetch(BUSINESS_NEWS);
   newsDataArr = [];
   if (responce.status >= 200 && responce.status < 300) {
     const myJson = await responce.json();
+    console.log(myJson);
     newsDataArr = myJson.articles;
   } else {
     // handle errors
@@ -84,6 +88,7 @@ const fetchSportNews = async () => {
 
   if (responce.status >= 200 && responce.status < 300) {
     const myJson = await responce.json();
+    console.log(myJson);
     newsDataArr = myJson.articles;
   } else {
     // handle errors
@@ -110,6 +115,7 @@ const fetchTechnologyNews = async () => {
 
   if (responce.status >= 200 && responce.status < 300) {
     const myJson = await responce.json();
+    console.log(myJson);
     newsDataArr = myJson.articles;
   } else {
     // handle errors
@@ -132,17 +138,19 @@ const fetchQueryNews = async () => {
     // handle errors
     console.log(responce.status, responce.statusText);
   }
-  // displayNews();
+  displayNews();
 };
 
 function displayNews() {
-  newsdetails.innerHTML = "";
-  if (newsDataArr.length == 0) {
-    newsdetails.innerHTML = "<h5>No data found.</h5>";
+  newsDetails.innerHTML = "";
+  if (newsDataArr.length === 0) {
+    newsDetails.innerHTML = "<h5>No data found.</h5>";
     return;
   }
   newsDataArr.forEach((news) => {
-    var col = document.createElement("div");
+    let date = news.publishedAt.split("T");
+
+    let col = document.createElement("div");
     col.className = "col-sm-12 col-md-4 col-lg-3 p-2 card";
 
     var card = document.createElement("div");
@@ -160,5 +168,27 @@ function displayNews() {
     newsHeading.innerHTML = news.title;
 
     var dateHeading = document.createElement("h6");
+    dateHeading.className = "text-primary";
+    dateHeading.innerHTML = date[0];
+
+    var discription = document.createElement("p");
+    discription.className = "text-muted";
+    discription.innerHTML = news.description;
+
+    var link = document.createElement("a");
+    link.className = "btn btn-dark";
+    link.setAttribute("target", "_blank");
+    link.herf = news.url;
+    link.innerHTML = "Read more";
+
+    cardBody.appendChild(newsHeading);
+    cardBody.appendChild(dateHeading);
+    cardBody.appendChild(discription);
+    cardBody.appendChild(link);
+
+    card.appendChild(image);
+    card.appendChild(cardBody);
+
+    newsDetails.appendChild(col);
   });
 }
