@@ -94,7 +94,6 @@ const fetchSportNews = async () => {
 const fetchEntertainmentNews = async () => {
   const responce = await fetch(ENTERTAINMENT_NEWS);
   newsDataArr = [];
-
   if (responce.status >= 200 && responce.status < 300) {
     const myJson = await responce.json();
     console.log(myJson);
@@ -119,7 +118,7 @@ const fetchTechnologyNews = async () => {
   displayNews();
 };
 const fetchQueryNews = async () => {
-  if (newsQuery.value === null) return;
+  if (newsQuery.value == null) return;
   const responce = await fetch(
     SEARCH_NEWS + encodeURIComponent(newsQuery.value) + "&apiKey="
   );
@@ -137,6 +136,7 @@ const fetchQueryNews = async () => {
 };
 
 function displayNews() {
+  newsdetails.innerHTML = "";
   if (newsDataArr.length == 0) {
     newsdetails.innerHTML = "<h5>No data found.</h5>";
     return;
@@ -151,5 +151,14 @@ function displayNews() {
     var image = document.createElement("img");
     image.setAttribute("height", "matchparnt");
     image.setAttribute("width", "100%");
+    image.src = news.urlToImage;
+
+    var cardBody = document.createElement("div");
+
+    var newsHeading = document.createElement("h5");
+    newsHeading.className = "card-title";
+    newsHeading.innerHTML = news.title;
+
+    var dateHeading = document.createElement("h6");
   });
 }
