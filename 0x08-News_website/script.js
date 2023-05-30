@@ -55,7 +55,7 @@ searchBtn.addEventListener("click", function () {
 });
 
 const fetchGeneralNews = async () => {
-  const responce = await fetch(GENERAL_NEWS + API_KEY);
+  const responce = await fetch(GENERAL_NEWS);
   newsDataArr = [];
   if (responce.status >= 200 && responce.status < 300) {
     const myJson = await responce.json();
@@ -67,7 +67,7 @@ const fetchGeneralNews = async () => {
   }
 };
 const fetchBusinessNews = async () => {
-  const responce = await fetch(BUSINESS_NEWS + API_KEY);
+  const responce = await fetch(BUSINESS_NEWS);
   newsDataArr = [];
   if (responce.status >= 200 && responce.status < 300) {
     const myJson = await responce.json();
@@ -79,7 +79,7 @@ const fetchBusinessNews = async () => {
   displayNews();
 };
 const fetchSportNews = async () => {
-  const responce = await fetch(SPORT_NEWS + API_KEY);
+  const responce = await fetch(SPORT_NEWS);
   newsDataArr = [];
 
   if (responce.status >= 200 && responce.status < 300) {
@@ -92,7 +92,7 @@ const fetchSportNews = async () => {
   displayNews();
 };
 const fetchEntertainmentNews = async () => {
-  const responce = await fetch(ENTERTAINMENT_NEWS + API_KEY);
+  const responce = await fetch(ENTERTAINMENT_NEWS);
   newsDataArr = [];
 
   if (responce.status >= 200 && responce.status < 300) {
@@ -106,7 +106,7 @@ const fetchEntertainmentNews = async () => {
   displayNews();
 };
 const fetchTechnologyNews = async () => {
-  const responce = await fetch(TECHNOLOGY_NEWS + API_KEY);
+  const responce = await fetch(TECHNOLOGY_NEWS);
   newsDataArr = [];
 
   if (responce.status >= 200 && responce.status < 300) {
@@ -121,7 +121,7 @@ const fetchTechnologyNews = async () => {
 const fetchQueryNews = async () => {
   if (newsQuery.value === null) return;
   const responce = await fetch(
-    SEARCH_NEWS + encodeURIComponent(newsQuery.value) + "&apiKey=" + API_KEY
+    SEARCH_NEWS + encodeURIComponent(newsQuery.value) + "&apiKey="
   );
   newsDataArr = [];
 
