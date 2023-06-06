@@ -540,7 +540,7 @@ article.container::before {
 }
 .highlight-list .title-3 {
   color: var(--on-surface-variant);
-  margin-inline-end: 20px;
+  margin-block-end: 20px;
 }
 
 .highlights .card-sm {
@@ -548,7 +548,7 @@ article.container::before {
   position: relative;
 }
 
-.weather-icon :is(.wrapper, .card-list, .card-item) {
+.highlight-card :is(.wrapper, .card-list, .card-item) {
   display: flex;
   align-items: center;
 }
@@ -567,6 +567,42 @@ article.container::before {
   width: 50%;
   justify-content: flex-end;
   gap: 4px;
+}
+
+.highlight-card .label-1 {
+  color: var(--on-surface-variant);
+}
+
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 2px 12px;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-semiBold);
+  cursor: help;
+}
+
+.badge.aqi-1 {
+  background-color: var(--bg-aqi-1);
+  color: var(--on-bg-aqi-1);
+}
+.badge.aqi-2 {
+  background-color: var(--bg-aqi-2);
+  color: var(--on-bg-aqi-2);
+}
+
+.badge.aqi-3 {
+  background-color: var(--bg-api-3);
+  color: var(--on-bg-api-3);
+}
+.badge.aqi-4 {
+  background-color: var(--bg-aqi-4);
+  color: var(--on-bg-aqi-4);
+}
+.badge.aqi-5 {
+  background-color: var(--bg-api-5);
+  color: var(--on-bg-api-5);
 }
 
 /*-----------------------------------*\
