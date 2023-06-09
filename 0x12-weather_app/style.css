@@ -505,6 +505,9 @@ article.container::before {
 /*-----------------------------------*\
   #HIGHLIGHTS
 \*-----------------------------------*/
+.forecast-card .title-2 {
+  margin-block-end: 0;
+}
 .forecast-card :is(.card-item, .icon-wrapper) {
   display: flex;
   align-items: center;
@@ -730,8 +733,6 @@ article.container::before {
 /* responsive for large than 768px screen */
 
 @media (min-width: 768px) {
-  /* reuse styles */
-
   .container {
     padding: 24px;
   }
@@ -784,7 +785,6 @@ article.container::before {
     align-items: flex-start;
     gap: 24px;
   }
-  /*
 
   .content-left {
     position: sticky;
@@ -831,5 +831,5 @@ article.container::before {
   }
   .hourly-forecast .card-sm {
     padding: 16px;
-  } */
+  }
 }
