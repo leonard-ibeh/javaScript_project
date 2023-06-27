@@ -8,7 +8,7 @@ let result = document.getElementById("result");
 
 let getMovie = () => {
   let movieName = movieNameRef.value;
-  let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${process.env.key}`;
+  let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
   // if Input field is empty
   if (movieName.length <= 0) {
     result.innerHTML = `<h3 class="msg">Please Enter A Movie Name</h3>`;
@@ -30,6 +30,10 @@ let getMovie = () => {
         console.log(data.Genre);
         console.log(data.Plot);
         console.log(data.Actors);
+
+        result.innerHTML = `<div class="info">
+        <img src=${data.Poster} class="poster">
+        </div>`;
       });
   }
 };
