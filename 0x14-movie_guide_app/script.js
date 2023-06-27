@@ -31,9 +31,19 @@ let getMovie = () => {
         console.log(data.Plot);
         console.log(data.Actors);
 
-        result.innerHTML = `<div class="info">
-        <img src=${data.Poster} class="poster">
-        </div>`;
+        result.innerHTML = `
+        <div class="info">
+          <img src=${data.Poster} class="poster">
+           <div>
+           <h2>${data.Title}</h2>
+           <div class="rating">
+            <span class="star">
+              <ion-icon  name="star-sharp"></ion-icon>
+            </span> 
+           <h4>${data.imdbRating}</h4>
+           </div>
+           </div>
+         </div>`;
       });
   }
 };
